@@ -80,7 +80,7 @@ const App = () => {
           <Section title="Number two">
             <ReloadInstructions />
           </Section>
-          <Section title="Debug">
+          <Section title="Number three">
             <DebugInstructions />
           </Section>
           <Section title="Learn More">
