@@ -99,17 +99,17 @@ const App = () => {
           <Section title="Logs">
             <Text>{JSON.stringify(logs)}</Text>
           </Section>
-          <Section title="Number One">
+          <Section title="Section One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
-          <Section title="Number two">
+          <Section title="Section two">
             <ReloadInstructions />
           </Section>
-          <Section title="Number three">
+          <Section title="Section three">
             <DebugInstructions />
           </Section>
-          <Section title="Number Four">
+          <Section title="Section Four">
             Read the docs to discover what to do next:
           </Section>
           <LearnMoreLinks />
