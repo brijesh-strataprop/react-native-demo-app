@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "release-android-update": "appcenter codepush release-react -a brijeshk-strataprop.com/strataprop-investor-app"
   },
   "dependencies": {
     "react": "17.0.2",

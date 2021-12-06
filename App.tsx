@@ -99,7 +99,7 @@ const App = () => {
           <Section title="Logs">
             <Text>{JSON.stringify(logs)}</Text>
           </Section>
-          <Section title="Section One">
+          <Section title="Number One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
