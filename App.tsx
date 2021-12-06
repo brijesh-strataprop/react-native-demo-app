@@ -18,6 +18,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import codePush from 'react-native-code-push';
+const codePushOptions = {checkFrequency: codePush.CheckFrequency.MANUAL};
 
 const Section: React.FC<{
   title: string;
@@ -53,6 +54,13 @@ const App = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  React.useEffect(() => {
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE,
+    });
+  }, []);
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -104,4 +112,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default codePush(App);
+export default codePush(codePushOptions)(App);
