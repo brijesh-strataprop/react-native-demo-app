@@ -17,6 +17,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import codePush from 'react-native-code-push';
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
@@ -63,7 +65,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
+          <Section title="Number One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
@@ -102,4 +104,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default codePush(App);
